@@ -727,7 +727,7 @@ strong {
 }
 
 .metric-header {
-  gap: 9px;
+  gap: 3px;
   margin-bottom: 8px;
 }
 
@@ -754,6 +754,12 @@ strong {
   font-weight: 500 !important;
   line-height: 1.25 !important;
   margin: 10px 0 0 !important;
+}
+
+.distribution-metrics .metric-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .step-card {
@@ -849,10 +855,17 @@ strong {
   margin-bottom: 8px !important;
 }
 
+.distribution-layout {
+  min-height: 520px;
+}
+
+.distribution-layout .figure-shell {
+  align-self: center;
+}
+
 .centered-takeaway {
   align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   min-height: 390px;
 }
@@ -866,14 +879,6 @@ strong {
   margin: 0 !important;
   padding-left: 22px;
   text-align: justify;
-}
-
-.takeaway-icon {
-  background: rgba(194, 65, 12, 0.12);
-  color: #c2410c;
-  height: 46px;
-  margin-bottom: 18px;
-  width: 46px;
 }
 
 .insight-panel {

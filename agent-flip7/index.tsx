@@ -11,7 +11,6 @@ import {
   FaCheckCircle,
   FaDice,
   FaExclamationTriangle,
-  FaExternalLinkAlt,
   FaFire,
   FaFlagCheckered,
   FaHandPaper,
@@ -114,7 +113,7 @@ const MetricCard = ({
       <Text className="metric-label">{label}</Text>
     </FlexBox>
     <Text className="metric-value">{value}</Text>
-    <Text className="metric-detail">{detail}</Text>
+    {detail ? <Text className="metric-detail">{detail}</Text> : null}
   </Box>
 );
 
@@ -741,7 +740,6 @@ const Presentation = () => (
           caption="Recompensa média em 2.000 simulações por política."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaChartLine} />
           <Text className="single-takeaway">
             Mesmo negativa, a recompensa média do Q-Learning foi a maior em comparação com as políticas
             manuais.
@@ -764,7 +762,6 @@ const Presentation = () => (
           caption="Proporção de vitórias em 2.000 simulações por política."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaTrophy} />
           <Text className="single-takeaway">
             O Q-Learning apresentou a maior taxa de vitória entre as políticas, superando as estratégias
             manuais.
@@ -787,7 +784,6 @@ const Presentation = () => (
           caption="Frequência com que o agente estourou em cada política."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaExclamationTriangle} />
           <Text className="single-takeaway">
             O Q-Learning assume mais risco que o conservador, mas estoura menos que a política agressiva.
           </Text>
@@ -809,7 +805,6 @@ const Presentation = () => (
           caption="Frequência com que o agente alcançou Flip-7."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaTrophy} />
           <Text className="single-takeaway">
             O Flip-7 foi raro em todas as políticas; o desempenho do Q-Learning vem mais do equilíbrio de
             risco do que da dependência desse bônus.
@@ -832,7 +827,6 @@ const Presentation = () => (
           caption="Pontuação média final do agente e do adversário."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaChartBar} />
           <Text className="single-takeaway">
             Mesmo contra um adversário com pontuação média alta, o Q-Learning aumenta a pontuação média do
             agente e mantém o melhor saldo relativo.
@@ -855,7 +849,6 @@ const Presentation = () => (
           caption="Quantidade média de cartas mantidas ao final da rodada."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaLayerGroup} />
           <Text className="single-takeaway">
             O Q-Learning mantém mais cartas que as políticas manuais mais simples, mas ainda equilibra o
             risco e abre mão de ter mais cartas na média quando comparado à política agressiva.
@@ -871,18 +864,18 @@ const Presentation = () => (
     <Slide backgroundColor="#faf7f2">
       <SectionTag>Resultados</SectionTag>
       <Heading>Distribuição final das partidas</Heading>
-      <Grid gridTemplateColumns="1.2fr .8fr" gridColumnGap="30px" alignItems="center">
+      <Grid className="distribution-layout" gridTemplateColumns="1.2fr .8fr" gridColumnGap="30px" alignItems="center">
         <Figure
           src="/assets/flip7_resultado_final.png"
           alt="Gráfico empilhado de vitórias, derrotas e empates"
           caption="Proporção de vitórias, derrotas e empates."
         />
         <Box>
-          <Grid gridTemplateColumns="1fr 1fr" gridGap="14px">
-            <MetricCard label="Random" value="11,4%" detail="taxa de vitória" icon={FaRandom} />
-            <MetricCard label="Conservador" value="7,1%" detail="taxa de vitória" icon={FaShieldAlt} />
-            <MetricCard label="Agressivo" value="26,2%" detail="taxa de vitória" icon={FaFire} />
-            <MetricCard label="Q-Learning" value="38,4%" detail="taxa de vitória" icon={FaBrain} />
+          <Grid className="distribution-metrics" gridTemplateColumns="1fr 1fr" gridGap="14px">
+            <MetricCard label="Random" value="11,4%" detail="" icon={FaRandom} />
+            <MetricCard label="Conservador" value="7,1%" detail="" icon={FaShieldAlt} />
+            <MetricCard label="Agressivo" value="26,2%" detail="" icon={FaFire} />
+            <MetricCard label="Q-Learning" value="38,4%" detail="" icon={FaBrain} />
           </Grid>
         </Box>
       </Grid>
@@ -902,7 +895,6 @@ const Presentation = () => (
           caption="Média do delta final apenas nas partidas perdidas."
         />
         <Box className="centered-takeaway">
-          <IconBadge className="takeaway-icon" icon={FaBalanceScale} />
           <Text className="single-takeaway">
             Nas derrotas, um delta menos negativo indica que a política reduziu a distância média para o
             adversário.
@@ -1062,7 +1054,6 @@ const Presentation = () => (
           >
             <FaBookOpen aria-hidden="true" />
             Abrir Notebook
-            <FaExternalLinkAlt aria-hidden="true" />
           </Link>
         </FlexBox>
         <FlexBox className="colab-visual-wrap" justifyContent="flex-start" alignItems="center">
