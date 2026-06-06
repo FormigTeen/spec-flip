@@ -137,6 +137,8 @@ const SectionTag = ({ children }: { children: React.ReactNode }) => (
   <Text className="section-tag">{children}</Text>
 );
 
+const assetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 const MdpTitle = ({ label }: { label: string }) => (
   <FlexBox className="mdp-title" justifyContent="flex-start" alignItems="center">
     <span className="mdp-title-base">MDP</span>
@@ -146,7 +148,7 @@ const MdpTitle = ({ label }: { label: string }) => (
 
 const Figure = ({ src, alt, caption }: { src: string; alt: string; caption: string }) => (
   <FlexBox className="figure-shell" flexDirection="column" alignItems="stretch">
-    <Image className="figure-image" src={src} alt={alt} />
+    <Image className="figure-image" src={assetPath(src)} alt={alt} />
     <Text className="figure-caption">{caption}</Text>
   </FlexBox>
 );
@@ -1064,7 +1066,7 @@ const Presentation = () => (
           </Link>
         </FlexBox>
         <FlexBox className="colab-visual-wrap" justifyContent="flex-start" alignItems="center">
-          <Image className="colab-logo" src="/assets/google-colab-logo.png" alt="Google Colab" />
+          <Image className="colab-logo" src={assetPath('/assets/google-colab-logo.png')} alt="Google Colab" />
         </FlexBox>
       </Grid>
       <Notes>
