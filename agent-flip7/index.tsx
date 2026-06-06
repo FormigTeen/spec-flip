@@ -46,7 +46,7 @@ import './styles.css';
 const theme = {
   colors: {
     primary: '#faf7f2',
-    secondary: '#18201d',
+    secondary: '#faf7f2',
     tertiary: '#0f766e',
     quaternary: '#c2410c',
     quinary: '#2563eb',
@@ -187,7 +187,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Problema</SectionTag>
       <Heading>Decidir sob risco crescente</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridColumnGap="44px" alignItems="center" height="74%">
@@ -228,7 +228,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Regras usadas</SectionTag>
       <Heading>Ambiente simplificado de Flip-7</Heading>
       <Grid gridTemplateColumns="1fr 1fr 1fr" gridGap="20px" marginTop="30px">
@@ -264,7 +264,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Regras usadas</SectionTag>
       <Heading>Adversário e consequência</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridGap="24px" marginTop="52px">
@@ -293,7 +293,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Modelagem</SectionTag>
       <MdpTitle label="ESTADO" />
       <Text className="mdp-lead">
@@ -354,7 +354,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Modelagem</SectionTag>
       <MdpTitle label="AÇÕES" />
       <Grid gridTemplateColumns="1fr 1fr" gridGap="24px" marginTop="48px">
@@ -385,7 +385,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Modelagem</SectionTag>
       <MdpTitle label="TRANSIÇÕES" />
       <Grid gridTemplateColumns="1fr 1fr 1fr" gridGap="16px" marginTop="38px">
@@ -517,7 +517,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Referências</SectionTag>
       <Heading>Políticas baseline</Heading>
       <Grid gridTemplateColumns="1fr 1fr 1fr" gridGap="22px" marginTop="42px">
@@ -557,7 +557,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Referências</SectionTag>
       <Heading>Regras das políticas manuais</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridGap="24px" marginTop="18px">
@@ -605,7 +605,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Algoritmo</SectionTag>
       <Heading>Q-Learning</Heading>
       <Grid gridTemplateColumns="1.03fr .97fr" gridColumnGap="32px" alignItems="center" marginTop="24px">
@@ -686,7 +686,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Experimento</SectionTag>
       <Heading>Pipeline de avaliação</Heading>
       <Grid gridTemplateColumns="repeat(4, 1fr)" gridGap="14px" marginTop="30px">
@@ -730,7 +730,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Recompensa média</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -752,7 +752,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Taxa de vitória</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -774,7 +774,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Taxa de estouro</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -795,7 +795,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Taxa de Flip-7</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -817,7 +817,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Pontuação média final</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -839,7 +839,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Quantidade média de cartas</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -861,7 +861,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Distribuição final das partidas</Heading>
       <Grid className="distribution-layout" gridTemplateColumns="1.2fr .8fr" gridColumnGap="30px" alignItems="center">
@@ -885,7 +885,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#eef3f0">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Resultados</SectionTag>
       <Heading>Severidade das derrotas</Heading>
       <Grid className="chart-detail-layout" gridTemplateColumns="1.08fr .92fr" gridColumnGap="28px" alignItems="center">
@@ -940,7 +940,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Números finais</SectionTag>
       <Heading>
         <TitleIcon icon={FaTable} />
@@ -978,7 +978,7 @@ const Presentation = () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#faf7f2">
+    <Slide backgroundColor="#12201c">
       <SectionTag>Limites</SectionTag>
       <Heading>Observações</Heading>
       <Grid gridTemplateColumns="1fr 1fr" gridGap="18px" marginTop="14px">
