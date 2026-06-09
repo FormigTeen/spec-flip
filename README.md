@@ -4,6 +4,7 @@ Trabalho de Inteligencia Artificial sobre um agente que aprende a jogar uma roda
 
 ## Links
 
+- Repositorio: https://github.com/FormigTeen/spec-flip
 - Google Colab: https://colab.research.google.com/github/FormigTeen/spec-flip/blob/master/Projeto_Inteligencia_Aritficial_Flip7.ipynb
 - GitHub Pages: https://formigteen.github.io/spec-flip/
 - Notebook no GitHub: https://github.com/FormigTeen/spec-flip/blob/master/Projeto_Inteligencia_Aritficial_Flip7.ipynb
